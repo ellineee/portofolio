@@ -15,7 +15,6 @@ body {
   color: #222;
 }
 
-/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -30,7 +29,6 @@ body {
   z-index: 999;
 }
 
-/* Judul / Logo kiri */
 .judul a {
   font-family: "Lavishly Yours", cursive;
   font-size: 2rem;
@@ -43,7 +41,6 @@ body {
   color: #3f5c9a;
 }
 
-/* Menu */
 .item a {
   font-family: "Times New Roman", Times, serif;
   margin: 0 14px;
@@ -57,7 +54,6 @@ body {
   color: #667ca3;
 }
 
-/* Ikon kanan */
 .logo a {
   margin-left: 15px;
   color: #333;
@@ -73,7 +69,6 @@ body {
   height: 30px;
 }
 
-/* HOME SECTION */
 .home {
   height: 100vh;
   display: flex;
@@ -85,7 +80,6 @@ body {
   margin-top: 60px;
 }
 
-/* Nama */
 .home h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 4rem;
@@ -94,7 +88,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Judul Portofolio */
 .home h2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 2rem;
@@ -103,7 +96,6 @@ body {
   margin-bottom: 18px;
 }
 
-/* Frontend Developer */
 .home p {
   font-family: "Times New Roman", Times, serif;
   font-size: 1.2rem;
@@ -111,7 +103,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* Tombol */
 .home .btn {
   font-family: "Times New Roman", Times, serif;
   background: white;
@@ -131,7 +122,6 @@ body {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* Container About */
 .about-me {
   width: 95%;
   background: #cbe1ff;
@@ -148,7 +138,6 @@ body {
   scroll-margin-top: 100px;
 }
 
-/* Foto kiri */
 .about-img img {
   width: 300px;
   height: 300px;
@@ -156,7 +145,6 @@ body {
   object-fit: cover;
 }
 
-/* Judul Halloo!! */
 .about-me h2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 2.3rem;
@@ -166,7 +154,6 @@ body {
   display: flex;
 }
 
-/* Paragraf */
 .about-me p {
   font-family: "Times New Roman", Times, serif;
   font-size: 1.5rem;
@@ -183,7 +170,6 @@ body {
   margin-top: 150px;
 }
 
-/* Container kotak besar untuk skill */
 .skill-grid {
   width: 80%;
   margin: 87px auto;
@@ -193,7 +179,6 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Judul Skill */
 .skill-grid h2 {
   font-size: 3rem;
   color: #1c3c74;
@@ -201,7 +186,6 @@ body {
   font-family: "Times New Roman", Times, serif ; 
 }
 
-/* Deskripsi skill */
 .skill-grid p {
   font-size: 1.2rem;
   color: #2e4c85;
@@ -216,7 +200,6 @@ body {
   justify-content: center;
 }
 
-/* Kotak skill kecil */
 .skill-card {
   width: 100px;
   height: 100px;
@@ -242,19 +225,17 @@ body {
   background: #afd0ff;
 }
 
-/* Hilangkan text-align center di parent biar tidak mengacaukan flex */
 .projects h2, 
 .projects > p {
   text-align: center;
   margin-bottom: 50px;
 }
 
-/* Wrapper kiri–kanan */
 .project-wrapper {
   display: flex;
   gap: 40px;
   justify-content: space-between;
-  align-items: center;   /* penting! supaya tidak turun */
+  align-items: center;   
   margin-bottom: 100px;
 }
 
@@ -262,11 +243,10 @@ body {
   flex-direction: row-reverse;
 }
 
-/* TEXT */
 .project-text {
   flex: 1;
-  max-width: 500px;   /* Biar teks tidak melebar & dorong layout turun */
-}
+  max-width: 500px;  
+} 
 
 .project-text h1 {
   font-family: "Times New Roman", Times, serif;
@@ -277,12 +257,10 @@ body {
 
 .project-text p {
   font-family: "Times New Roman", Times, serif;
-  font-size: 1.2rem; /* DIPERKECIL supaya tidak memanjang */
-  color: #2e4c85;
+  font-size: 1.2rem; 
   margin: 15px 0 25px;
 }
 
-/* BUTTON */
 .project-btn {
   font-family: "Times New Roman", Times, serif;
   padding: 10px 28px;
@@ -293,7 +271,6 @@ body {
   display: inline-block;
 }
 
-/* IMAGE */
 .project-img {
   flex: 1;
   display: flex;
@@ -484,6 +461,9 @@ body {
   .navbar {
     padding: 15px 30px;
     flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
   .item a {
     margin: 0 10px;
