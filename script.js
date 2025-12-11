@@ -1,4 +1,4 @@
-ocument.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contactForm");
 
     form.addEventListener("submit", async (e) => {
@@ -14,7 +14,8 @@ ocument.addEventListener("DOMContentLoaded", () => {
             const data = await res.json();
 
             if (res.ok) {
-                form.reset();
+                form.reset();        
+                location.reload();  
             } else {
                 alert("Error: " + JSON.stringify(data));
             }
